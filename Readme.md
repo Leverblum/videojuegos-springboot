@@ -25,3 +25,86 @@ spring.datasource.username=root
 spring.datasource.password=
 
 3. Corre la aplicacion
+
+## Endpoints
+Crear videojuego
+URL:
+```bash 
+http://localhost:8080/api/videojuegos
+```
+Body (JSON):
+```json
+{
+  "titulo": "The Legend of Zelda: Breath of the Wild",
+  "genero": "Aventura",
+  "plataforma": "Nintendo Switch",
+  "desarrollador": "Nintendo",
+  "anioLanzamiento": 2017
+}
+```
+
+Obtener todos los videojuegos
+URL: 
+```bash 
+http://localhost:8080/api/videojuegos
+```
+
+Obtener un videojuego por ID
+URL:
+```bash 
+http://localhost:8080/api/videojuegos/1
+```
+
+Actualizar un videojuego
+URL:
+```bash 
+http://localhost:8080/api/videojuegos/1
+```
+Body(Json):
+```json
+{
+  "titulo": "The Legend of Zelda: Breath of the Wild",
+  "genero": "Aventura",
+  "plataforma": "Nintendo Switch",
+  "desarrollador": "Nintendo",
+  "anioLanzamiento": 2017
+}
+```
+
+Eliminar un videojuego
+URL:
+```bash 
+http://localhost:8080/api/videojuegos/1
+```
+
+Buscar videojuegos por género
+URL: 
+```bash
+http://localhost:8080/api/videojuegos/genero/Aventura
+```
+Buscar videojuegos por plataforma
+URL: 
+```bash
+http://localhost:8080/api/videojuegos/plataforma/Nintendo Switch
+```
+
+Buscar videojuegos por desarrollador
+URL: 
+```bash
+http://localhost:8080/api/videojuegos/desarrollador/Nintendo
+```
+
+Buscar videojuegos por año de lanzamiento
+URL: 
+```bash
+http://localhost:8080/api/videojuegos/anio/2017
+```
+
+
+
+
+
+
+
+
+
